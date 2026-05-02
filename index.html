@@ -5,69 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cosmetics Queen (CQ)</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
-
 <style>
-body {margin:0;font-family:'Prompt',sans-serif;background:#0a0f1c;color:#fff;}
+body {margin:0;font-family:'Prompt',sans-serif;background:#f5f7fa;color:#222;}
 .container {width:90%;max-width:1200px;margin:auto;}
-.section {padding:80px 0;text-align:center;}
-.btn {
-background:linear-gradient(45deg,#00c853,#00e676);
-padding:15px 30px;
-border-radius:50px;
-text-decoration:none;
-color:#fff;
-font-weight:bold;
-display:inline-block;
-margin-top:20px;
-}
-.hero {
-height:100vh;
-display:flex;
-align-items:center;
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-url('https://images.unsplash.com/photo-1581093458791-9d8e3c9c8d5f') center/cover;
-}
-h1 {font-size:42px;}
+.section {padding:60px 0;text-align:center;}
+.btn {background:#00c853;color:#fff;padding:14px 25px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:15px;font-weight:bold;}
 .grid {display:flex;gap:20px;flex-wrap:wrap;}
-.card {background:#111827;padding:20px;border-radius:15px;flex:1;min-width:250px;}
-img {width:100%;border-radius:12px;}
+.card {background:#fff;padding:20px;border-radius:10px;flex:1;min-width:250px;}
+.hero {background:linear-gradient(to right,#0f2027,#203a43,#2c5364);color:#fff;padding:80px 0;}
+.hero-flex {display:flex;gap:30px;align-items:center;}
+img {width:100%;border-radius:10px;}
+.contact {background:#0f2027;color:#fff;}
+.footer {background:#111;color:#aaa;text-align:center;padding:20px;}
 
-.line-btn {
+.line-float {
 position:fixed;
 bottom:20px;
 right:20px;
 background:#00c853;
+color:#fff;
 padding:15px;
 border-radius:50px;
 text-decoration:none;
-color:#fff;
 font-weight:bold;
-}
-
-input {
-padding:12px;
-margin:10px;
-width:80%;
-border-radius:8px;
-border:none;
-}
-
-.popup {
-position:fixed;
-top:0;left:0;
-width:100%;height:100%;
-background:rgba(0,0,0,0.7);
-display:none;
-justify-content:center;
-align-items:center;
-}
-.popup-box {
-background:#fff;
-color:#000;
-padding:30px;
-border-radius:15px;
-text-align:center;
 }
 </style>
 </head>
@@ -76,90 +36,101 @@ text-align:center;
 
 <!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <h1>อยากมีแบรนด์เครื่องสำอาง<br>แต่ไม่รู้จะเริ่มยังไง?</h1>
-    <p>เราช่วยคุณตั้งแต่ 0 → ขายได้จริง</p>
-    <a href="https://line.me/ti/p/@CosmeticsQueen" class="btn">ทักตอนนี้ รับคำแนะนำฟรี</a>
+  <div class="container hero-flex">
+    <img src="file_0000000008dc72088a9235ce81b03c03">
+    <div>
+      <h1>โรงงานผลิตเครื่องสำอางครบวงจร</h1>
+      <p>มาตรฐาน GMP | ทีม R&D ผู้เชี่ยวชาญ 10+ ปี</p>
+      <a href="#contact" class="btn">ปรึกษาฟรี</a>
+    </div>
   </div>
 </section>
 
-<!-- PROBLEM -->
+<!-- FACTORY -->
 <section class="section">
-  <h2>คุณกำลังเจอปัญหาแบบนี้ไหม?</h2>
-  <p>
-  ❌ อยากมีแบรนด์ แต่ไม่รู้เริ่มยังไง<br>
-  ❌ กลัวโดนโกง / สินค้าไม่ได้คุณภาพ<br>
-  ❌ ผลิตแล้วขายไม่ได้
-  </p>
+  <div class="container">
+    <h2>โรงงานของเรา</h2>
+    <img src="file_00000000f12072089050312187bc7654">
+    <p>โรงงานมาตรฐาน สะอาด ปลอดภัย พร้อมผลิตจริง</p>
+  </div>
 </section>
 
-<!-- SOLUTION -->
-<section class="section">
-  <h2>Cosmetics Queen คือคำตอบ</h2>
-  <p>โรงงาน + ทีม R&D + ประสบการณ์ 10 ปี</p>
+<!-- LAB & MACHINE -->
+<section class="section" style="background:#eef3f8;">
+  <div class="container">
+    <h2>ห้อง Lab และเครื่องจักร</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="file_0000000008dc72088a9235ce81b03c03">
+        <p>ห้องวิจัยและพัฒนาสูตร (R&D Lab)</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+        <p>เครื่องผสมสูตร Homogenizer</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b">
+        <p>สายการผลิตมาตรฐาน GMP</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- EXPERT -->
+<!-- EXPERT (ตัวคุณ) -->
 <section class="section">
-  <h2>ดูแลโดยผู้เชี่ยวชาญ</h2>
-  <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" style="max-width:250px;">
-  <p>ดร.เอ๊าะ | R&D เครื่องสำอาง</p>
+  <div class="container">
+    <h2>ผู้เชี่ยวชาญของเรา</h2>
+    <img src="file_00000000d2107208ac5de5360804a3bc" style="max-width:300px;">
+    <p>
+      <b>ดร.เอ๊าะ</b><br>
+      ผู้เชี่ยวชาญ R&D เครื่องสำอาง<br>
+      ประสบการณ์มากกว่า 10 ปี<br>
+      ที่ปรึกษามาตรฐาน GMP
+    </p>
+  </div>
 </section>
 
-<!-- RESULT -->
-<section class="section">
-  <h2>ผลลัพธ์ลูกค้า</h2>
-  <p>เริ่มจาก 0 → ยอดหลักแสน/เดือน</p>
+<!-- SERVICES -->
+<section class="section" style="background:#eef3f8;">
+  <div class="container">
+    <h2>บริการของเรา</h2>
+    <div class="grid">
+      <div class="card">ผลิตครีม เซรั่ม โลชั่น</div>
+      <div class="card">สร้างแบรนด์ครบวงจร</div>
+      <div class="card">ออกแบบแพ็กเกจ</div>
+      <div class="card">จดแจ้ง อย.</div>
+    </div>
+  </div>
 </section>
 
-<!-- REVIEW -->
+<!-- PORTFOLIO -->
 <section class="section">
-  <h2>รีวิวจริง</h2>
-  <p>“เริ่มจากไม่มีอะไร ตอนนี้ขายวันละ 100+ ออเดอร์”</p>
-</section>
-
-<!-- OFFER -->
-<section class="section">
-  <h2>🔥 โปรพิเศษ</h2>
-  <p>เริ่มต้นหลักพัน + ฟรีคำแนะนำ</p>
-</section>
-
-<!-- FOMO -->
-<section class="section">
-  <h2>รับจำนวนจำกัด / เดือน</h2>
-  <p>เพื่อควบคุมคุณภาพ</p>
-</section>
-
-<!-- FORM -->
-<section class="section">
-  <h2>ฝากข้อมูลให้เราติดต่อกลับ</h2>
-  <input placeholder="ชื่อ"><br>
-  <input placeholder="เบอร์โทร"><br>
-  <a href="https://line.me/ti/p/@CosmeticsQueen" class="btn">ส่งข้อมูล + แอด LINE</a>
+  <div class="container">
+    <h2>ผลงานของเรา</h2>
+    <div class="grid">
+      <div class="card"><img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"><p>แบรนด์ยอดขายหลักล้าน</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348"><p>เซรั่มขายดี</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1585238342028-4f1c8b6f1c48"><p>ครีมบำรุง</p></div>
+    </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section">
-  <h2>ติดต่อทันที</h2>
-  <p>📞 064-992-6624</p>
-  <a href="https://line.me/ti/p/@CosmeticsQueen" class="btn">แอด LINE</a>
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2>ติดต่อเรา</h2>
+    <p>📞 064-992-6624</p>
+    <p>💬 LINE: @CosmeticsQueen</p>
+    <p>📍 ที่ตั้ง: ใส่ที่อยู่ของคุณ</p>
+    <a href="#" class="btn">แอด LINE ตอนนี้</a>
+  </div>
 </section>
 
-<a href="https://line.me/ti/p/@CosmeticsQueen" class="line-btn">LINE</a>
+<a href="#" class="line-float">LINE</a>
 
-<!-- POPUP -->
-<div class="popup" id="popup">
-  <div class="popup-box">
-    <h3>🎁 รับสูตรขายดี ฟรี วันนี้เท่านั้น</h3>
-    <a href="https://line.me/ti/p/@CosmeticsQueen" class="btn">แอด LINE</a>
-  </div>
+<div class="footer">
+© 2026 Cosmetics Queen (CQ)
 </div>
-
-<script>
-setTimeout(function(){
-document.getElementById("popup").style.display="flex";
-},3000);
-</script>
 
 </body>
 </html>
