@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmetics Queen (CQ)</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {margin:0;font-family:'Prompt',sans-serif;background:#0a0f1c;color:#fff;}
+.container {width:90%;max-width:1200px;margin:auto;}
+.section {padding:80px 0;text-align:center;}
+.btn {
+background:linear-gradient(45deg,#00c853,#00e676);
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+display:inline-block;
+margin-top:20px;
+}
+.hero {
+height:100vh;
+display:flex;
+align-items:center;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1581093458791-9d8e3c9c8d5f') center/cover;
+}
+h1 {font-size:42px;}
+.grid {display:flex;gap:20px;flex-wrap:wrap;}
+.card {background:#111827;padding:20px;border-radius:15px;flex:1;min-width:250px;}
+img {width:100%;border-radius:12px;}
+
+.line-btn {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#00c853;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+}
+
+input {
+padding:12px;
+margin:10px;
+width:80%;
+border-radius:8px;
+border:none;
+}
+
+.popup {
+position:fixed;
+top:0;left:0;
+width:100%;height:100%;
+background:rgba(0,0,0,0.7);
+display:none;
+justify-content:center;
+align-items:center;
+}
+.popup-box {
+background:#fff;
+color:#000;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>อยากมีแบรนด์เครื่องสำอาง<br>แต่ไม่รู้จะเริ่มยังไง?</h1>
+    <p>เราช่วยคุณตั้งแต่ 0 → ขายได้จริง</p>
+    <a href="https://line.me/ti/p/@CosmeticsQueen" class="btn">ทักตอนนี้ รับคำแนะนำฟรี</a>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section">
+  <h2>คุณกำลังเจอปัญหาแบบนี้ไหม?</h2>
+  <p>
+  ❌ อยากมีแบรนด์ แต่ไม่รู้เริ่มยังไง<br>
+  ❌ กลัวโดนโกง / สินค้าไม่ได้คุณภาพ<br>
+  ❌ ผลิตแล้วขายไม่ได้
+  </p>
+</section>
+
+<!-- SOLUTION -->
+<section class="section">
+  <h2>Cosmetics Queen คือคำตอบ</h2>
+  <p>โรงงาน + ทีม R&D + ประสบการณ์ 10 ปี</p>
+</section>
+
+<!-- EXPERT -->
+<section class="section">
+  <h2>ดูแลโดยผู้เชี่ยวชาญ</h2>
+  <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" style="max-width:250px;">
+  <p>ดร.เอ๊าะ | R&D เครื่องสำอาง</p>
+</section>
+
+<!-- RESULT -->
+<section class="section">
+  <h2>ผลลัพธ์ลูกค้า</h2>
+  <p>เริ่มจาก 0 → ยอดหลักแสน/เดือน</p>
+</section>
+
+<!-- REVIEW -->
+<section class="section">
+  <h2>รีวิวจริง</h2>
+  <p>“เริ่มจากไม่มีอะไร ตอนนี้ขายวันละ 100+ ออเดอร์”</p>
+</section>
+
+<!-- OFFER -->
+<section class="section">
+  <h2>🔥 โปรพิเศษ</h2>
+  <p>เริ่มต้นหลักพัน + ฟรีคำแนะนำ</p>
+</section>
+
+<!-- FOMO -->
+<section class="section">
+  <h2>รับจำนวนจำกัด / เดือน</h2>
+  <p>เพื่อควบคุมคุณภาพ</p>
+</section>
+
+<!-- FORM -->
+<section class="section">
+  <h2>ฝากข้อมูลให้เราติดต่อกลับ</h2>
+  <input placeholder="ชื่อ"><br>
+  <input placeholder="เบอร์โทร"><br>
+  <a href="https://line.me/ti/p/@CosmeticsQueen" class="btn">ส่งข้อมูล + แอด LINE</a>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <h2>ติดต่อทันที</h2>
+  <p>📞 064-992-6624</p>
+  <a href="https://line.me/ti/p/@CosmeticsQueen" class="btn">แอด LINE</a>
+</section>
+
+<a href="https://line.me/ti/p/@CosmeticsQueen" class="line-btn">LINE</a>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+  <div class="popup-box">
+    <h3>🎁 รับสูตรขายดี ฟรี วันนี้เท่านั้น</h3>
+    <a href="https://line.me/ti/p/@CosmeticsQueen" class="btn">แอด LINE</a>
+  </div>
+</div>
+
+<script>
+setTimeout(function(){
+document.getElementById("popup").style.display="flex";
+},3000);
+</script>
+
+</body>
+</html>
