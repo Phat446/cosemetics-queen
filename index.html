@@ -3,31 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cosmetics Queen (CQ)</title>
+<title>Cosmetics Queen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-body {margin:0;font-family:'Prompt',sans-serif;background:#f5f7fa;color:#222;}
+body {margin:0;font-family:'Prompt',sans-serif;background:#0a0f1c;color:#fff;}
 .container {width:90%;max-width:1200px;margin:auto;}
 .section {padding:60px 0;text-align:center;}
-.btn {background:#00c853;color:#fff;padding:14px 25px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:15px;font-weight:bold;}
-.grid {display:flex;gap:20px;flex-wrap:wrap;}
-.card {background:#fff;padding:20px;border-radius:10px;flex:1;min-width:250px;}
-.hero {background:linear-gradient(to right,#0f2027,#203a43,#2c5364);color:#fff;padding:80px 0;}
-.hero-flex {display:flex;gap:30px;align-items:center;}
-img {width:100%;border-radius:10px;}
-.contact {background:#0f2027;color:#fff;}
-.footer {background:#111;color:#aaa;text-align:center;padding:20px;}
+img {width:100%;border-radius:12px;}
 
-.line-float {
+.btn {
+background:linear-gradient(45deg,#00c853,#00e676);
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+display:inline-block;
+margin-top:20px;
+}
+
+.line-btn {
 position:fixed;
 bottom:20px;
 right:20px;
 background:#00c853;
-color:#fff;
-padding:15px;
+padding:15px 20px;
 border-radius:50px;
-text-decoration:none;
+color:#fff;
 font-weight:bold;
+text-decoration:none;
+}
+
+/* Popup */
+.popup {
+position:fixed;
+top:0;left:0;
+width:100%;height:100%;
+background:rgba(0,0,0,0.8);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+.popup-box {
+width:90%;
+max-width:800px;
+position:relative;
+}
+
+.close {
+position:absolute;
+top:10px;
+right:15px;
+font-size:30px;
+cursor:pointer;
 }
 </style>
 </head>
@@ -35,102 +67,77 @@ font-weight:bold;
 <body>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="container hero-flex">
-    <img src="file_0000000008dc72088a9235ce81b03c03">
-    <div>
-      <h1>โรงงานผลิตเครื่องสำอางครบวงจร</h1>
-      <p>มาตรฐาน GMP | ทีม R&D ผู้เชี่ยวชาญ 10+ ปี</p>
-      <a href="#contact" class="btn">ปรึกษาฟรี</a>
-    </div>
-  </div>
-</section>
-
-<!-- FACTORY -->
 <section class="section">
   <div class="container">
-    <h2>โรงงานของเรา</h2>
-    <img src="file_00000000f12072089050312187bc7654">
-    <p>โรงงานมาตรฐาน สะอาด ปลอดภัย พร้อมผลิตจริง</p>
+    <img src="hero.jpg">
+    <a href="https://line.me/ti/p/@dqn0602h" class="btn">ปรึกษาฟรี</a>
   </div>
 </section>
 
-<!-- LAB & MACHINE -->
-<section class="section" style="background:#eef3f8;">
-  <div class="container">
-    <h2>ห้อง Lab และเครื่องจักร</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="file_0000000008dc72088a9235ce81b03c03">
-        <p>ห้องวิจัยและพัฒนาสูตร (R&D Lab)</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
-        <p>เครื่องผสมสูตร Homogenizer</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b">
-        <p>สายการผลิตมาตรฐาน GMP</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERT (ตัวคุณ) -->
+<!-- PROBLEM / SOLUTION -->
 <section class="section">
   <div class="container">
-    <h2>ผู้เชี่ยวชาญของเรา</h2>
-    <img src="file_00000000d2107208ac5de5360804a3bc" style="max-width:300px;">
-    <p>
-      <b>ดร.เอ๊าะ</b><br>
-      ผู้เชี่ยวชาญ R&D เครื่องสำอาง<br>
-      ประสบการณ์มากกว่า 10 ปี<br>
-      ที่ปรึกษามาตรฐาน GMP
-    </p>
+    <img src="problem-solution.jpg">
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="section" style="background:#eef3f8;">
-  <div class="container">
-    <h2>บริการของเรา</h2>
-    <div class="grid">
-      <div class="card">ผลิตครีม เซรั่ม โลชั่น</div>
-      <div class="card">สร้างแบรนด์ครบวงจร</div>
-      <div class="card">ออกแบบแพ็กเกจ</div>
-      <div class="card">จดแจ้ง อย.</div>
-    </div>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
+<!-- EXPERT -->
 <section class="section">
   <div class="container">
-    <h2>ผลงานของเรา</h2>
-    <div class="grid">
-      <div class="card"><img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"><p>แบรนด์ยอดขายหลักล้าน</p></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348"><p>เซรั่มขายดี</p></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1585238342028-4f1c8b6f1c48"><p>ครีมบำรุง</p></div>
-    </div>
+    <img src="expert.jpg">
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section contact">
+<!-- LAB -->
+<section class="section">
   <div class="container">
-    <h2>ติดต่อเรา</h2>
-    <p>📞 064-992-6624</p>
-    <p>💬 LINE: @CosmeticsQueen</p>
-    <p>📍 ที่ตั้ง: ใส่ที่อยู่ของคุณ</p>
-    <a href="#" class="btn">แอด LINE ตอนนี้</a>
+    <img src="lab.jpg">
   </div>
 </section>
 
-<a href="#" class="line-float">LINE</a>
+<!-- REVIEW -->
+<section class="section">
+  <div class="container">
+    <img src="review.jpg">
+  </div>
+</section>
 
-<div class="footer">
-© 2026 Cosmetics Queen (CQ)
+<!-- PRODUCT -->
+<section class="section">
+  <div class="container">
+    <img src="product.jpg">
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <h2>เริ่มสร้างแบรนด์วันนี้</h2>
+    <a href="https://line.me/ti/p/@dqn0602h" class="btn">ทัก LINE ตอนนี้</a>
+  </div>
+</section>
+
+<!-- FLOAT LINE -->
+<a href="https://line.me/ti/p/@dqn0602h" class="line-btn">LINE</a>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+  <div class="popup-box">
+    <span class="close" onclick="closePopup()">×</span>
+    <img src="popup.jpg">
+  </div>
 </div>
+
+<script>
+// แสดง popup
+setTimeout(function(){
+document.getElementById("popup").style.display="flex";
+},3000);
+
+function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+</script>
 
 </body>
 </html>
